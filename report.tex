@@ -1,0 +1,45 @@
+\documentclass[hidelinks, a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+%%Comments
+%Use \myquote{word} for correct quotation marks on word.
+
+%%Packages
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{supertabular}
+\usepackage{float}
+
+%%Commands
+%Pretty tables
+\renewcommand{\arraystretch}{1.5}
+%Easy correct quotation
+\newcommand{\myquote}[1]{``{#1}''}
+
+%%Document start
+\begin{document}
+\title{An Examination of the Recruitment Process at Valcon}
+\author{Jakob Ambeck Vase \and Jonas Kastberg Hinrichsen \and Jakob Merrild \and Mikkel Frikke Madsen \and Martin Juul Petersen}
+
+%%Preface
+\maketitle
+\tableofcontents
+%\listoffigures
+
+%%Content
+\chapter{Introduction}
+\input{intro/intro}
+\chapter{In-line analysis \\ Understanding the company's goals}
+\input{inline/inline}
+\chapter{In-depth analysis \\ Understanding the problem}
+\input{indepth/indepth}
+\chapter{Innovation \\ Possible solutions}
+\input{innovation/innovation}
+
+\appendix
+\chapter{Project Agreement}
+\input{appendix/project_agreement}
+
+\end{document}
