@@ -1,6 +1,0 @@
-\select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}In-line analysis \\ Understanding the company's goals}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}In-depth analysis \\ Understanding the problem}{4}{chapter.3}
-\contentsline {chapter}{\numberline {4}Innovation \\ Possible solutions}{5}{chapter.4}
-\contentsline {chapter}{\numberline {A}Project Agreement}{6}{appendix.A}
