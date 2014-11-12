@@ -1,6 +1,7 @@
 \documentclass[hidelinks, a4paper]{report}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 %%Comments
 %Use \myquote{word} for correct quotation marks on word.
@@ -18,20 +19,29 @@
 \renewcommand{\arraystretch}{1.5}
 %Easy correct quotation
 \newcommand{\myquote}[1]{``{#1}''}
+%prettier chapters
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
 
 %%Document start
 \begin{document}
+
 \title{An Examination of the Recruitment Process at Valcon}
 \author{Jakob Ambeck Vase \and Jonas Kastberg Hinrichsen \and Jakob Merrild \and Mikkel Frikke Madsen \and Martin Juul Petersen}
 \listoftodos[Todos]
+
 %%Preface
 \maketitle
 \tableofcontents
 %\listoffigures
 %%Content
 \chapter{Introduction}
+\todo{Should we have chapter numbers?}
 \input{intro/intro}
-\chapter{In-line analysis \\ Understanding the company's goals}
+\chapter{In-line analysis \\ Understanding Valcon's goals}
 \input{inline/inline}
 \chapter{In-depth analysis \\ Understanding the problem}
 \input{indepth/indepth}
