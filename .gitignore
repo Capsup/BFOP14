@@ -1,6 +1,7 @@
 *
 
 !*/
+!*.png
 !.gitignore
 !*.tex
 !appendix/*.pdf
