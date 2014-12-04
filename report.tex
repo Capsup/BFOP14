@@ -14,13 +14,19 @@
 \usepackage{float}
 \usepackage{todonotes}
 \usepackage{wrapfig}
-\usepackage[pagewise]{lineno}
+\usepackage{lineno}
+
 
 %%Commands
 %Pretty tables
 \renewcommand{\arraystretch}{1.5}
 %Easy correct quotation
 \newcommand{\myquote}[1]{``\emph{#1}''}
+%command for complete references
+\newcommand{\completeref}[1]{\ref{#1},~\nameref{#1}}
+%commands for referencing lines to be used with lineno package
+\newcommand{\quotelabel}[1]{\label{#1}\linelabel{#1}}
+\newcommand{\quoteref}[1]{\completeref{#1}, line~\lineref{#1}}
 %prettier chapters
 \usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
@@ -28,7 +34,6 @@
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 
-\newcommand{\completeref}[1]{\ref{#1}~,~\nameref{#1}}
 
 %%Document start
 \begin{document}
