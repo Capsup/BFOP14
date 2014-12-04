@@ -25,6 +25,8 @@
 %command for complete references
 \newcommand{\completeref}[1]{\ref{#1},~\nameref{#1}}
 %commands for referencing lines to be used with lineno package
+%Usage: enter \quotelabel{label} on the line with the quote
+%Usage: type [Aa]ppendix \quoteref{label} when referencing the quote
 \newcommand{\quotelabel}[1]{\label{#1}\linelabel{#1}}
 \newcommand{\quoteref}[1]{\completeref{#1}, line~\lineref{#1}}
 %prettier chapters
