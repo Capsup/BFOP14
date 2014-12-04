@@ -14,6 +14,7 @@
 \usepackage{float}
 \usepackage{todonotes}
 \usepackage{wrapfig}
+\usepackage[pagewise]{lineno}
 
 %%Commands
 %Pretty tables
@@ -27,6 +28,7 @@
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 
+\newcommand{\completeref}[1]{\ref{#1}~,~\nameref{#1}}
 
 %%Document start
 \begin{document}
