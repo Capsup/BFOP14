@@ -5,3 +5,4 @@
 !.gitignore
 !*.tex
 !appendix/*.pdf
+!frontpage.pdf
