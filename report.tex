@@ -33,8 +33,10 @@
 \usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
-\titlespacing*{\chapter}{0pt}{0pt}{20pt}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\titleclass{\chapter}{straight}
+\titlespacing*{\chapter}{0pt}{20pt}{15pt}
+\titleformat{\chapter}[hang]{\huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\huge\bfseries}
 
 
 %%Document start
@@ -49,8 +51,10 @@
 \tableofcontents
 %\listoffigures
 %%Content
+\newpage
 \chapter{Introduction}
 \input{intro/intro}
+\newpage
 \chapter{In-line analysis \\ Understanding Valcon}
 \input{inline/inline}
 \chapter{In-depth analysis \\ Understanding the problem}
@@ -58,6 +62,7 @@
 \chapter{Innovation \\ Possible solutions}
 \input{innovation/innovation}
 
+\titleclass{\chapter}{top}
 \appendix
 The individual reports are in the end of this .pdf
 \input{appendix/appendices}
