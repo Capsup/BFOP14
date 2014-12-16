@@ -1,1 +1,60 @@
-WRITE IT
+\documentclass[hidelinks, a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+%%Comments
+%Use \myquote{word} for correct quotation marks on word.
+
+%%Packages
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{supertabular}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{wrapfig}
+\usepackage{lineno}
+\usepackage{fullpage}
+ 
+%%Commands
+%Pretty tables
+\renewcommand{\arraystretch}{1.5}
+%Easy correct quotation
+\newcommand{\myquote}[1]{``\emph{#1}''}
+%command for complete references
+\newcommand{\completeref}[1]{\ref{#1},~\nameref{#1}}
+%commands for referencing lines to be used with lineno package
+%Usage: enter \quotelabel{label} on the line with the quote
+%Usage: type [Aa]ppendix \quoteref{label} when referencing the quote
+%\newcommand{\quotelabel}[2]{\label{#1}\linelabel{#2}}
+\newcommand{\quoteref}[2]{\completeref{#1}, line~\lineref{#2}}
+%prettier chapters
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+
+%%Document start
+\begin{document}
+
+\title{Individual Reflective Report for\\an Examination of the Recruitment Process at Valcon\\ \vspace{2 mm} {\large Company: Valcon}}
+\author{Jakob Ambeck Vase \\ Group 2 \\ jvaf@itu.dk}
+
+%%Preface
+\maketitle
+
+%%Content
+\chapter{Jakob Ambeck Vase\\Individual reflection report}
+\input{intro}
+\input{insider}
+\input{ethnography}
+\input{must_principles}
+
+%\newpage
+%\input{text}
+%\input{toughts}
+
+\end{document}
