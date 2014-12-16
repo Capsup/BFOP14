@@ -5,4 +5,5 @@
 !.gitignore
 !*.tex
 !appendix/*.pdf
+!Individual_reflection_reports/*.pdf
 !frontpage.pdf
